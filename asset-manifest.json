@@ -1,7 +1,17 @@
 {
   "main.css": "static/css/main.c17080f1.css",
   "main.css.map": "static/css/main.c17080f1.css.map",
-  "main.js": "static/js/main.940ee311.js",
-  "main.js.map": "static/js/main.940ee311.js.map",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "main.js": "static/js/main.0a9bf39c.js",
+  "main.js.map": "static/js/main.0a9bf39c.js.map",
+  "static/media/archer.jpg": "static/media/archer.822dcd63.jpg",
+  "static/media/bravo.jpg": "static/media/bravo.ad294411.jpg",
+  "static/media/homer.jpg": "static/media/homer.5dff7a61.jpg",
+  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
+  "static/media/scooby.jpg": "static/media/scooby.9ed88ed3.jpg",
+  "static/media/simpsons.jpg": "static/media/simpsons.a3f59eaf.jpg",
+  "static/media/southpark.jpg": "static/media/southpark.855bffad.jpg",
+  "static/media/spongebob.jpg": "static/media/spongebob.5b99fb5e.jpg",
+  "static/media/stewie.jpg": "static/media/stewie.c62af141.jpg",
+  "static/media/stoner.jpg": "static/media/stoner.f2f97f27.jpg",
+  "static/media/wiley.jpg": "static/media/wiley.5fe30bf7.jpg"
 }
