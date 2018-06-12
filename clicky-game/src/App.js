@@ -22,13 +22,88 @@ import wiley from "./images/wiley.jpg"
 import './App.css';
 
 class App extends Component {
+  state = {
+    Images
+  };
+
+
+  
+
+  // shuffleArray = (array) => {
+  //   let imgArray = Image;
+  //   for (let i = imgArray.length - 1; i > 0; i--) {
+  //     let j = Math.floor(Math.random() * (i + 1));
+  //     [imgArray[i], imgArray[j]] = [imgArray[j], imgArray[i]];
+  //   }
+  //   return imgArray
+  // }
+
+  // pickImg = (name) => {
+  //   let picked = this.state.picked;
+    
+  //   if (picked.indexOf(name) === -1) {
+  //     this.setState({
+  //       picked: picked.concat(name),
+  //       correct: this.state.correct + 1,
+  //       topscore: this.state.correct + 1 > this.state.topscore ? this.state.correct + 1 : this.state.topscore,
+  //       message: "Correct!" 
+  //     })
+  //     this.shuffleArray();
+  //   }
+  //   else {
+  //     this.setState({
+  //       correct: 0,
+  //       picked: [],
+  //       message: "Wrong!"
+  //     })
+  //   }
+  // }
+
+  // imgSwitch = (name) => {
+  //   switch (name) {
+  //     case "archer":
+  //       return `${archer}`
+  //     case "bear":
+  //       return `${bear}`
+  //     case "bravo":
+  //       return `${bravo}`
+  //     case "homer":
+  //       return `${homer}`
+  //     case "peter":
+  //       return `${peter}`
+  //     case "scooby":
+  //       return `${scooby}`
+  //     case "simpsons":
+  //       return `${simpsons}`
+  //     case "southpark":
+  //       return `${southpark}`
+  //     case "spongebob":
+  //       return `${spongebob}`
+  //     case "stewie":
+  //       return `${stewie}`
+  //     case "stoner":
+  //       return `${stoner}`
+  //     case "wiley":
+  //       return `${wiley}`
+  //     default:
+  //       return `${archer}`
+  //   }
+  // }
+
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar correct={this.state.correct} topscore={this.state.topscore} message={this.state.message}/>
         <Jumbotron />
-        <Main />
-            <Image  />
+        <Main>
+        {this.state.Images.map(friend => (
+          <Image
+            name={friend.name}
+            url={friend.url}
+    
+          />
+        ))}
+      </Main>
       </div>
     );
   }
