@@ -2,11 +2,11 @@ import React from "react";
 
 const Navbar = (props) => (
 
-  <nav className="navbar navbar-light bg-info">
-    <span className="navbar-brand mb-0 h1">Clicky Game</span>
-    <span className="text-center mb-0 h3">{props.message}</span>
-    <span className="navbar-text text-dark font-weight-bold">
-      Score: <span>{props.correct}</span>&nbsp;
+  <nav className="navbar navbar-dark bg-primary">
+    <span className="navbar-brand">Clicky Game</span>
+    <span className="navbar-text text-center text-light h3">{props.message}</span>
+    <span className="navbar-text text-light h3">
+      Score: <span>{props.correct}</span>&nbsp;|
       Top Score: <span>{props.topscore}</span>
     </span>
   </nav>

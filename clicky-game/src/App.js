@@ -29,7 +29,6 @@ class App extends Component {
     message: 'Click an image!'
   };
 
-
   shuffleArray = (array) => {
     let imgArray = Images;
     for (let i = imgArray.length - 1; i > 0; i--) {
